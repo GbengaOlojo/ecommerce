@@ -1,11 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>buzz</title>
-</head>
-<body>
-    <h1> Welcome to Buzz</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chap Buzz</title>
+    <!-- TailWind CSS-->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-200 max-w-md flex flex-col overflow-y-hidden min-h-screen">
+      <!-- Header -->
+    <div class="flex flex-row justify-between items-center p-3 pt-10">
+      <i class="fas fa-bars fa-lg"></i>
+      <h3 class="text-blue-700 text-xl font-bold">C<span class="text-green-300">B</span></h3>
+      <i class="fas fa-search fa-lg"></i>
+    </div>
+    <!-- End Header -->
+
+
+    <div class="flex flex-col flex-grow">
+        <!--Product Title-->
+        <div class="flex flex-row justify-between">
+            <h1 class="pt-3 pl-5 font-bold text-lg">Our Products</h1>
+            <h1 class="pt-3 pr-5 text-gray-500 font-bold text-sm">Sort by <i class="fas fa-chevron-down fa-sm"></i></h1>
+
+        </div>
+        <!-- End Product Title-->
+
+        <!--Category List Group-->
+        <div class="p-3 pl-5 flex flex-row justify-between gap-3 overflow-scroll">
+            <div class="flex flex-row items-center justify-center bg-white p-2 pl-5 pr-5 rounded-xl shadow-lg gap-1">
+                <img width="30" src="../assets/beer.svg"/>
+                <span class="text-blue-700 font-bold">Beer</span>
+            </div>
+            <div class="flex flex-row items-center justify-center bg-white p-2 pl-5 pr-5 rounded-xl shadow-lg gap-1">
+                <img width="30" src="../assets/spirit.svg"/>
+
+                <span>Spirits</span></div>
+                <div class="flex flex-row items-center justify-center bg-white p-2 pl-5 pr-5 rounded-xl shadow-lg gap-1">
+                    <img width="30" src="../assets/alcohol.svg"/>
+                    <span>Wine</span>
+                </div>
+
+                <div class="flex flex-row items-center justify-center bg-white p-2 pl-5 pr-5 rounded-xl shadow-lg gap-1">
+                    <img width="30" src="../assets/beverage.svg"/>
+                    <span>Beverages</span>
+                </div>
+
+                <div class="flex flex-row items-center justify-center bg-white p-2 pl-5 pr-5 rounded-xl shadow-lg gap-1">
+                    <img width="30" src="../assets/more.svg"/>
+                    <span>Others</span>
+                </div>
+
+
+        </div>
+        <!--End Category List Group-->
+
+        <!--Product List-->
+        <div class="p-5 flex flex-row flex-wrap gap-8 justify-center">
+          <div class="w-2/5 bg-white h-64 rounded-3xl flex flex-col shadow-xl">
+            <!-- Discount and Wishlist-->
+            <div class="flex flex-row justify-between p-2">
+              <div class="bg-blue-300 p-1 pl-2 pr-2 text-xs font-bold rounded-2xl">30%</div>
+
+              <div class="pr-2"><i class="fas fa-heart text-gray-300"></i></div>
+            </div>
+            <!-- End Discount & Wishlist -->
+
+            <div class="h-32 w-32 mt-3 flex justify-center self-center rounded-full bg-blue-100">
+              <img class="absolute h-40 self-center" src="../assets/stella-artois.png" />
+              <div class="h-24 w-24 flex self-center rounded-full bg-blue-100 border-white border-2">
+              </div>
+
+            </div>
+            <p class="mt-5 text-center font-bold text-blue-700 text-opacity-75">Stella Artois</p>
+            <p class="text-center font-bold text-xl text-blue-700">£1.79</p>
+          
+          </div>
+
+
+           <div class="w-2/5 bg-white h-64 rounded-3xl flex flex-col shadow-xl">
+            <!-- Discount and Wishlist-->
+            <div class="flex flex-row justify-between p-2">
+              <div class="bg-blue-300 p-1 pl-2 pr-2 text-xs font-bold rounded-2xl">10%</div>
+
+              <div class="pr-2"><i class="fas fa-heart text-red-700"></i></div>
+            </div>
+            <!-- End Discount & Wishlist -->
+
+            <div class="h-32 w-32 mt-3 flex justify-center self-center rounded-full bg-blue-100">
+              <img class="absolute h-40 self-center" src="../assets/heineken.png" />
+              <div class="h-24 w-24 flex self-center rounded-full bg-blue-100 border-white border-2">
+              </div>
+
+            </div>
+            <p class="mt-5 text-center font-bold text-blue-700 text-opacity-75">Heineken</p>
+            <p class="text-center font-bold text-xl text-blue-700">£1.60</p>
+          
+          </div>
+        </div>
+        <!-- End Product List-->
+
+        
+
+
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="h-16">
+    <div class="flex" id="tabs-id">
+        <ul class="bg-white w-full h-16 flex mb-0 list-none pt-3 pb-4 flex-row justify-between items-center">
+          <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+            <i class="fas fa-envelope-open fa-lg text-blue-700"></i>
+          </li>
+          <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+            <i class="fas fa-heart fa-lg text-gray-500"></i>
+          </li>
+          <li class="-mb-px mr-2 last:mr-0 flex text-center">
+            <i class="fab fa-opencart fa-lg text-white fa-2x bg-blue-700 p-5 h-20 w-20 rounded-full mb-10 shadow-sm"></i> 
+          </li>
+          <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+            <i class="fas fa-shipping-fast fa-lg text-gray-500"></i>
+          </li>
+          
+          <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+            <i class="fas fa-user fa-lg text-gray-500"></i>
+        </li>
+        </ul>
+    </div>
+  </footer>
+    <!-- VUE JS-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js" integrity="sha256-KSlsysqp7TXtFo/FHjb1T9b425x3hrvzjMWaJyKbpcI=" crossorigin="anonymous"></script>
+
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/c8c9028de4.js" crossorigin="anonymous"></script>
+  </body>
 </html>

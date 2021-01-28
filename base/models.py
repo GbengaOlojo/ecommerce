@@ -14,12 +14,14 @@ class Brand(models.Model):
 
 class Product(models.Model):
     CATEGORIES = (
+    
         ('01', 'Spirits'),
         ('02', 'Wines'),
         ('03',  'Beers'),
         ('04', 'Gas carnisters'),
         ('05', 'Internationals'),
-        ('06', 'Beverages/non alcoholic')
+        ('06', 'Beverages/non alcoholic'),
+        ('07', 'Others')
     )
     brand = models.ForeignKey(Brand, on_delete=models.CASCADE)
     name = models.CharField(max_length=20)
